@@ -7,10 +7,36 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    
+    //    @State private var userName: String = ""
+    //    @State private var password: String = ""
+    
+    @ObservedObject private var loginViewModel = LoginViewModel(authService: AuthenticationService())
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            Group {
+                VStack {
+                    TextField("Enter username", text: self.$loginViewModel.username)
+                        .padding()
+                        .border(Color.gray, width: 1, cornerRadius: 10)
+                    SecureField("Password", text: self.$loginViewModel.password)
+                        .padding()
+                        .border(Color.gray, width: 1, cornerRadius: 10)
+                    Button("Login") {
+                        self.loginViewModel.login()
+                    }
+                    .font(.title)
+                    
+                    Text(self.loginViewModel.isLoggedIn ? "LOGGED IN" : "NOT LOGGED IN")
+                        .foregroundColor(self.loginViewModel.isLoggedIn ? .green : .red)
+                        .bold()
+                }
+            }.padding()
+                .navigationBarTitle("Login Screen")
+        }
     }
 }
 

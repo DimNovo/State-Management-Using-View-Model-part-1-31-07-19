@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7492A4AC22F15F6D0078324F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492A4AB22F15F6D0078324F /* LoginViewModel.swift */; };
+		7492A4AE22F162100078324F /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492A4AD22F162100078324F /* AuthenticationService.swift */; };
+		7492A4B022F162950078324F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492A4AF22F162950078324F /* User.swift */; };
 		74A13F5D22F13C9C00111769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A13F5C22F13C9C00111769 /* AppDelegate.swift */; };
 		74A13F5F22F13C9C00111769 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A13F5E22F13C9C00111769 /* SceneDelegate.swift */; };
 		74A13F6122F13C9C00111769 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A13F6022F13C9C00111769 /* ContentView.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7492A4AB22F15F6D0078324F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = "../../../../../System/Volumes/Data/Users/dmitrynovosyolov/Downloads/State Management Using View Model/State Management Using View Model/LoginViewModel.swift"; sourceTree = "<group>"; };
+		7492A4AD22F162100078324F /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationService.swift; path = "../../../../../System/Volumes/Data/Users/dmitrynovosyolov/Downloads/State Management Using View Model/State Management Using View Model/AuthenticationService.swift"; sourceTree = "<group>"; };
+		7492A4AF22F162950078324F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../../../System/Volumes/Data/Users/dmitrynovosyolov/Downloads/State Management Using View Model/State Management Using View Model/User.swift"; sourceTree = "<group>"; };
 		74A13F5922F13C9C00111769 /* State Management Using View Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "State Management Using View Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A13F5C22F13C9C00111769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A13F5E22F13C9C00111769 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +62,12 @@
 		74A13F5B22F13C9C00111769 /* State Management Using View Model */ = {
 			isa = PBXGroup;
 			children = (
+				7492A4AF22F162950078324F /* User.swift */,
+				7492A4AB22F15F6D0078324F /* LoginViewModel.swift */,
+				7492A4AD22F162100078324F /* AuthenticationService.swift */,
+				74A13F6022F13C9C00111769 /* ContentView.swift */,
 				74A13F5C22F13C9C00111769 /* AppDelegate.swift */,
 				74A13F5E22F13C9C00111769 /* SceneDelegate.swift */,
-				74A13F6022F13C9C00111769 /* ContentView.swift */,
 				74A13F6222F13C9D00111769 /* Assets.xcassets */,
 				74A13F6722F13C9D00111769 /* LaunchScreen.storyboard */,
 				74A13F6A22F13C9D00111769 /* Info.plist */,
@@ -146,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7492A4AC22F15F6D0078324F /* LoginViewModel.swift in Sources */,
 				74A13F5D22F13C9C00111769 /* AppDelegate.swift in Sources */,
+				7492A4B022F162950078324F /* User.swift in Sources */,
 				74A13F5F22F13C9C00111769 /* SceneDelegate.swift in Sources */,
 				74A13F6122F13C9C00111769 /* ContentView.swift in Sources */,
+				7492A4AE22F162100078324F /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
