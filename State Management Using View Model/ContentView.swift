@@ -15,6 +15,7 @@ struct ContentView: View {
     //    @State private var password: String = ""
     
     @ObservedObject private var loginViewModel = LoginViewModel(authService: AuthenticationService())
+    
     var body: some View {
         NavigationView {
             Group {
@@ -29,6 +30,11 @@ struct ContentView: View {
                         self.loginViewModel.login()
                     }
                     .font(.title)
+                        
+                    .sheet(isPresented: self.$loginViewModel.isLoggedIn) { Text("Hi & Welcome!\ndear\n\(self.loginViewModel.username)")
+                    .font(.largeTitle)
+                    .foregroundColor(.blue)
+                    }
                     
                     Text(self.loginViewModel.isLoggedIn ? "LOGGED IN" : "NOT LOGGED IN")
                         .foregroundColor(self.loginViewModel.isLoggedIn ? .green : .red)
